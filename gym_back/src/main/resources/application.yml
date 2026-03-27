@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/gym_db
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: winner
+
+jwt:
+  secret: USPCzzD1coK0oJn25x6FWHXaisUuedL96+ioQ7O+nQQ=
+  expirationMs: 3600000
